@@ -5,6 +5,7 @@ import lombok.Getter;
 import java.util.Objects;
 
 @Data
+@Getter
 public class Cat {
     public  static String voice;
     private String name;
