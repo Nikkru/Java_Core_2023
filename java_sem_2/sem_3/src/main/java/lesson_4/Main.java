@@ -26,8 +26,15 @@ public class Main {
                     System.out.println("Кот - девочка");
             }
         }
-
-
-
+        /**
+         * Анонимный класс
+         */
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Run!");
+            }
+        };
+        runnable.run();
     }
 }
