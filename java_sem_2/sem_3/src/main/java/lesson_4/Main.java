@@ -3,6 +3,7 @@ package lesson_4;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.BiFunction;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,13 +29,33 @@ public class Main {
         }
         /**
          * Анонимный класс
-         */
+         **/
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
                 System.out.println("Run!");
             }
         };
+        /**
+         * лямда-выражения
+         **/
+        Runnable runnable2 = () -> {
+                System.out.println("NEWWW Run!");
+            };
+        BiFunction<Integer, Integer, String> biFunction = new BiFunction<Integer, Integer, String>() {
+            @Override
+            public String apply(Integer a, Integer b) {
+                return String.format("%s + %s = %s", a, b, a + b);
+            }
+        };
+        /**
+         * лямда-выражения
+         **/
+        BiFunction<Integer, Integer, String> biFunction2 = (a, b) -> String.format("%s + %s = %s", a, b, a + b);
+
         runnable.run();
+        runnable2.run();
+        System.out.println(biFunction.apply(5, 7));
+        System.out.println(biFunction2.apply(10, 2));
     }
 }
