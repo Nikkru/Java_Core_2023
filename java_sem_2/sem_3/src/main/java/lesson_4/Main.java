@@ -27,6 +27,11 @@ public class Main {
                     System.out.println("Кот - девочка");
             }
         }
+        System.out.println("***");
+        for (Cat cat: catList) {
+            System.out.println(cat.getMale().getRussianMaleTitile());
+        }
+        System.out.println("***");
         /**
          * Анонимный класс
          **/
