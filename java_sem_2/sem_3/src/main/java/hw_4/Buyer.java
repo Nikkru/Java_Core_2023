@@ -8,10 +8,10 @@ public class Buyer {
 
 //    private static ArrayList<Buyer> buyers = new ArrayList<Buyer>();
 //    private static HashSet<Buyer> buyers_ = new HashSet<Buyer>();
-    private static HashMap<String, Buyer> _buyers = new HashMap<>();
-    private String name;
-    private int age;
-    private String phone_number;
+    private static final HashMap<String, Buyer> _buyers = new HashMap<>();
+    private final String name;
+    private final int age;
+    private final String phone_number;
     public Buyer(String name, int age, String phone_number) {
         this.name = name;
         this.age = age;

@@ -7,6 +7,6 @@ public class WrongPasswordConfirmException extends RuntimeException {
 
     @Override
     public String getMessage() {
-        return String.format("Потверждающий ввод пароля не совпадает с первым");
+        return "Потверждающий ввод пароля не совпадает с первым";
     }
 }

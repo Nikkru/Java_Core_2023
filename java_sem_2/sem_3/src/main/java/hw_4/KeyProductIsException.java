@@ -1,7 +1,7 @@
 package hw_4;
 
 public class KeyProductIsException extends RuntimeException {
-    private String name;
+    private final String name;
 
     public KeyProductIsException(String name) {
         this.name = name;

@@ -34,7 +34,7 @@ public class PasswordLogin {
     }
     public static boolean isLogIn(String login) {
         int loginLength = login.length();
-        if (isLoginVacant(login) == false)
+        if (!isLoginVacant(login))
             throw new WrongLoginValueException(login);
         else if (loginLength >= 20)
             throw new WrongLoginException(loginLength);

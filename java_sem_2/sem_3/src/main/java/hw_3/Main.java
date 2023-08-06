@@ -54,7 +54,7 @@ public class Main {
 //В основной программе создайте руководителя и поместите его в общий массив сотрудников.
         employees.add(employee_6);
 
-        System.out.println(employee_6.toString());
+        System.out.println(employee_6);
 
         for (Employee emp : employees) {
             System.out.println(emp.toString());
