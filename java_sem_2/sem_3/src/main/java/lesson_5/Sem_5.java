@@ -14,7 +14,7 @@ public class Sem_5 {
 //        readWriteFileBuffer("save.txt", "in.txt");
         readChangeWriteFileBuffer("save.txt", "in.txt", '1', "TRUE");
     }
-    public static void writeToFile(int[] arr) throws  IOException{
+    public static void writeToFile(int[] arr) throws  IOException {
         FileOutputStream fos = new FileOutputStream("save.txt", true);
         fos.write(Arrays.toString(arr).getBytes());
         fos.close();
@@ -27,7 +27,7 @@ public class Sem_5 {
             System.out.println("File data:");
             int count;
             while ((count = fin.read(buffer)) != -1) {
-                for (int i=0; i<count; i++) {
+                for (int i=0; i < count; i++) {
                     System.out.println((char) buffer[i]);
                 }
             }
